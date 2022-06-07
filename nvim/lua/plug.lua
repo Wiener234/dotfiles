@@ -16,6 +16,8 @@ return require('packer').startup(function(use)
   use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons'}
   -- [[ Themes Go Here ]]
   use { 'Mofiqul/dracula.nvim' }                     -- colorscheme
-
+  use {'andweeb/presence.nvim'}
+  use {'arnarg/todotxt.nvim',
+        requires = 'MunifTanjim/nui.nvim'}
 end)
 -- config = {package_root = vim.fn.stdpath('config') .. '/site/pack'})
